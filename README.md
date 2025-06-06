@@ -11,7 +11,7 @@ A modern and interactive chatbot component built with Next and styled with Tailw
 
 ## Demo
 
-![ChatBot Demo](https://dlc-chatbot-wheat.vercel.app/)
+[Live Link](https://dlc-chatbot-wheat.vercel.app/)
 
 ## Getting Started
 
