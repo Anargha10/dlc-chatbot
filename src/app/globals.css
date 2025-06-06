@@ -1,26 +1,70 @@
-@import "tailwindcss";
+/* src/app/globals.css */
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+
+@tailwind utilities; /* All Tailwind's core utilities, including component-like styles, are now here */
+
+/* Custom Scrollbar for Webkit browsers */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px; /* Adjust width */
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05); /* Lighter track for dark theme */
+  border-radius: 10px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.2); /* Lighter thumb for dark theme */
+  border-radius: 10px;
+  border: 1px solid transparent;
+  background-clip: padding-box;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Important: Message bubble tails (adjust values as needed) */
+/* These are crucial for the chat bubble design */
+.message-bubble {
+    position: relative; /* Needed for pseudo-elements */
+    overflow: visible; /* Allows the pseudo-element to extend outside */
+    border-radius: 15px; /* Base rounded corners for all bubbles */
+    padding: 10px 16px; /* px-4 py-2 corresponds to this approx */
+}
+
+.message-bubble.user-message {
+    border-bottom-right-radius: 5px; /* Flatten one corner for user messages */
+    margin-left: auto; /* Push user message to the right */
+}
+.message-bubble.user-message::before {
+    content: '';
+    position: absolute;
+    bottom: 0px; /* Adjust to align tail with bottom of bubble */
+    right: -7px; /* Adjust to extend tail outwards from the right */
+    width: 0;
+    height: 0;
+    border: 7px solid transparent; /* Creates the triangle shape */
+    border-left-color: rgba(147, 51, 234, 0.8); /* Matches purple-600/80 */
+    border-bottom-color: rgba(147, 51, 234, 0.8);
+    transform: rotate(45deg); /* Rotates for correct orientation */
+    z-index: -1; /* Ensure it stays behind the bubble content */
+}
+
+.message-bubble.bot-message {
+    border-bottom-left-radius: 5px; /* Flatten one corner for bot messages */
+    margin-right: auto; /* Push bot message to the left */
+}
+.message-bubble.bot-message::before {
+    content: '';
+    position: absolute;
+    bottom: 0px; /* Adjust to align tail with bottom of bubble */
+    left: -7px; /* Adjust to extend tail outwards from the left */
+    width: 0;
+    height: 0;
+    border: 7px solid transparent; /* Creates the triangle shape */
+    border-right-color: rgba(255, 255, 255, 0.1); /* Matches white/10 */
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+    transform: rotate(-45deg); /* Rotates for correct orientation */
+    z-index: -1;
 }
