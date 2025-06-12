@@ -23,25 +23,25 @@ export default function Home() {
         <motion.div 
           animate={{ rotate: 360 }} 
           transition={{ repeat: Infinity, duration: 60, ease: "linear" }} 
-          className="absolute w-96 h-96 bg-purple-500/20 rounded-full blur-3xl top-1/4 left-1/4"
+          className="absolute w-96 h-96 bg-[#a855f7]/20 rounded-full blur-3xl top-1/4 left-1/4"
         />
         <motion.div 
           animate={{ x: [0, 100, 0], y: [0, 50, 0] }} 
           transition={{ repeat: Infinity, duration: 30, ease: "easeInOut" }} 
-          className="absolute w-72 h-72 bg-blue-500/20 rounded-full blur-3xl bottom-1/3 right-1/4"
+          className="absolute w-72 h-72 bg-[#3b82f6]/20 rounded-full blur-3xl bottom-1/3 right-1/4"
         />
       </div>
 
       {/* Welcome Message Box - Enhanced for storytelling */}
-      <div className="relative z-10 bg-white/5 backdrop-blur-xl p-8 md:p-12 lg:p-16 rounded-3xl shadow-2xl text-white max-w-4xl text-center border border-white/10 animate-fade-in-up">
+      <div className="relative z-10 bg-[#ffffff]/5 backdrop-blur-xl p-8 md:p-12 lg:p-16 rounded-3xl shadow-2xl text-[#ffffff] max-w-4xl text-center border border-[#ffffff]/10 animate-fade-in-up">
         <h1 className="hero-title text-4xl md:text-6xl lg:text-7xl font-extrabold mb-6 tracking-wide drop-shadow-xl leading-tight">
-          Welcome to <span className="text-purple-400">Collegetips.in</span>
+          Welcome to <span className="text-[#1bdb0e]">Collegetips.in</span>
         </h1>
-        <p className="hero-tagline text-xl md:text-2xl lg:text-3xl text-white/90 max-w-3xl mx-auto mb-10 font-light">
-          **Empowering Digital Literacy!** Navigate the digital world with confidence, one skill at a time.
+        <p className="hero-tagline text-xl md:text-2xl lg:text-3xl text-[#ffffff]/90 max-w-3xl mx-auto mb-10 font-light">
+       <span className='text-[#a855f7] font-bold'>Empowering Digital Literacy! </span> Navigate the digital world with confidence, one skill at a time.
         </p>
         <Link href="/tutorials" passHref>
-          <button className="hero-button bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white font-bold py-4 px-10 rounded-full shadow-lg transform hover:scale-105 transition-all duration-300 ease-in-out flex items-center justify-center gap-3 mx-auto">
+          <button className="hero-button bg-gradient-to-r from-[#9333ea] to-[#2563eb] hover:from-[#7e22ce] hover:to-[#1d4ed8] text-[#ffffff] font-bold py-4 px-10 rounded-full shadow-lg transform hover:scale-105 transition-all duration-300 ease-in-out flex items-center justify-center gap-3 mx-auto">
             <BookOpen className="w-6 h-6" /> Start Your Digital Journey
           </button>
         </Link>

@@ -6,12 +6,12 @@ import { Send } from 'lucide-react'; // Icon for 'Watch Tutorial'
 
 // Mock data for tutorials - in a real app, this would come from an API or CMS
 const tutorialsData = [
-  { id: 'whatsapp', title: 'WhatsApp Fundamentals', description: 'Learn to connect, share, and communicate securely with friends and family.', icon: '/whatsapp.png', videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ' }, // Replace with real video links
-  { id: 'paytm', title: 'Paytm: Digital Payments Made Easy', description: 'Master cashless transactions, bill payments, and financial services on the go.', icon: '/paytm.png', videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ' },
-  { id: 'googlemaps', title: 'Google Maps: Explore Your World', description: 'Navigate new cities, find places, get directions, and discover local gems.', icon: '/googlemaps.png', videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ' },
-  { id: 'digilit', title: 'What is Digital Literacy?', description: 'Understand the core concepts and importance of navigating the modern digital landscape.', icon: '/digilit.png', videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ' },
-  { id: 'email', title: 'Email Essentials: Stay Connected', description: 'Learn to send, receive, and manage emails effectively for personal and professional use.', icon: '/email.svg', videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ' }, // Assuming you'd add this icon
-  { id: 'socialmedia', title: 'Safe Social Media Habits', description: 'Discover best practices for privacy, security, and responsible engagement on social platforms.', icon: '/socialmedia.svg', videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ' }, // Assuming you'd add this icon
+  { id: 'whatsapp', title: 'WhatsApp Fundamentals', description: 'Learn to connect, share, and communicate securely with friends and family.', icon: '/whatsapp.png', videoUrl: 'https://www.internetmatters.org/advice/apps-and-platforms/social-media/whatsapp/' }, // Replace with real video links
+  { id: 'paytm', title: 'Paytm: Digital Payments Made Easy', description: 'Master cashless transactions, bill payments, and financial services on the go.', icon: '/paytm.png', videoUrl: 'https://paytm.com/blog/paytm-help/' },
+  { id: 'googlemaps', title: 'Google Maps: Explore Your World', description: 'Navigate new cities, find places, get directions, and discover local gems.', icon: '/googlemaps.png', videoUrl: 'https://support.google.com/maps/answer/3273406?hl=en&co=GENIE.Platform%3DAndroid' },
+  { id: 'digilit', title: 'What is Digital Literacy?', description: 'Understand the core concepts and importance of navigating the modern digital landscape.', icon: '/digilit.png', videoUrl: 'https://en.wikipedia.org/wiki/Digital_literacy' },
+  { id: 'email', title: 'Email Essentials: Stay Connected', description: 'Learn to send, receive, and manage emails effectively for personal and professional use.', icon: '/email.svg', videoUrl: 'https://profiletree.com/how-to-use-email/' }, // Assuming you'd add this icon
+  { id: 'socialmedia', title: 'Safe Social Media Habits', description: 'Discover best practices for privacy, security, and responsible engagement on social platforms.', icon: '/socialmedia.svg', videoUrl: 'https://www.webfx.com/blog/social-media/social-media-101/#:~:text=Post%20content%20often&text=To%20ensure%20that%20users%20can,that%20you%20post%20content%20frequently.' }, // Assuming you'd add this icon
 ];
 
 export default function TutorialsPage() {
