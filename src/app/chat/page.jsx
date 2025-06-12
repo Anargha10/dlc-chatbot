@@ -13,7 +13,7 @@ export default function ChatPage() {
         Have questions? Need instant help? Our AI assistant, DigiBuddy, is ready to chat.
       </p>
       <p className="text-gray-400 text-base animate-fade-in delay-400">
-        Click the glowing chat icon in the bottom right corner to open DigiBuddy and start your conversation!
+        Click the glowing chat icon  to open DigiBuddy and start your conversation!
       </p>
       {/* The actual ChatBot modal is rendered via layout.js */}
       <ChatBot/>
